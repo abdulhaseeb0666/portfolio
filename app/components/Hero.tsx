@@ -12,7 +12,7 @@ export default function Hero() {
       />
 
       <h1 className="text-3xl font-bold">Abdul Haseeb</h1>
-      <p className="text-gray-600">Next.js Developer</p>
+      <p className="text-gray-600">Front-End Developer</p>
     </section>
   );
 }
