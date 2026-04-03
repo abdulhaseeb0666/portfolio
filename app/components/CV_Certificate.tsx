@@ -27,62 +27,44 @@ const certificates: Certificate[] = [
 
 export default function CVAndCertificates() {
   return (
-    <section className="w-full px-6 py-10 bg-gray-50">
-      
-      {/* CV Section */}
-      <div className="mb-10">
-        <h2 className="text-2xl font-semibold mb-4">Curriculum Vitae</h2>
+    <section className="space-y-12">
 
-        <div className="bg-white p-6 rounded-lg shadow flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <div>
-            <p className="text-gray-700">
-              Download my latest CV to learn more about my experience, skills, and projects.
-            </p>
-        </div>
+      {/* CV */}
+      <div className="bg-linear-to-br from-gray-900 to-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700">
+        <h2 className="text-2xl font-bold mb-4">Curriculum Vitae</h2>
+        <p className="text-gray-400 mb-6">Download or view my professional resume.</p>
 
         <div className="flex gap-4">
-            <a href="/AbdulHaseebResume.pdf" download className="px-5 py-2 bg-black text-white rounded hover:bg-gray-800 text-center">
-                Download CV
-            </a>
-            <a href={"/AbdulHaseebResume.pdf"} target="_blank" className="px-5 py-2 bg-black text-white rounded hover:bg-gray-800 text-center">
-                View CV
-            </a>
-        </div>
+          <a href="/AbdulHaseebResume.pdf" download className="px-6 py-2 bg-linear-to-r from-purple-500 to-blue-500 rounded-lg hover:scale-105 transition">
+            Download
+          </a>
+          <a href="/AbdulHaseebResume.pdf" target="_blank" className="px-6 py-2 border border-gray-600 rounded-lg hover:bg-gray-800 transition">
+            View
+          </a>
         </div>
       </div>
 
-      {/* Certificates Section */}
+      {/* CERTIFICATES */}
       <div>
-        <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
+        <h2 className="text-2xl font-bold mb-6">Certificates</h2>
 
-        {certificates.length === 0 ? (
-          <p className="text-gray-600">No certificates added yet.</p>
-        ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certificates.map((cert) => (
-              <div
-                key={cert.id}
-                className="bg-white p-5 rounded-lg shadow border"
-              >
-                <h3 className="text-lg font-semibold mb-1">
-                  {cert.title}
-                </h3>
-                <p className="text-sm text-gray-600">{cert.issuer}</p>
-                <p className="text-sm text-gray-500 mb-3">{cert.date}</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {certificates.map((cert) => (
+            <div key={cert.id} className="group bg-gray-900 border border-gray-700 p-6 rounded-xl shadow hover:shadow-purple-500/20 transition">
+              <h3 className="text-lg font-semibold group-hover:text-purple-400 transition">
+                {cert.title}
+              </h3>
+              <p className="text-sm text-gray-400">{cert.issuer}</p>
+              <p className="text-xs text-gray-500 mb-3">{cert.date}</p>
 
-                {cert.link && (
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    className="text-blue-600 text-sm hover:underline"
-                  >
-                    View Certificate
-                  </a>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+              {cert.link && (
+                <a href={cert.link} target="_blank" className="text-blue-400 text-sm hover:underline">
+                  View Certificate
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
