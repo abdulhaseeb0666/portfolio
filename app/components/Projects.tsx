@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Finance Tracker",
     desc: "Track income, expenses and budgets",
-    link: "https://finance-management-by-haseeb.vercel.app/",
+    link: "https://monetra-by-haseeb.vercel.app/",
   },
   {
     title: "E-commerce Store",
