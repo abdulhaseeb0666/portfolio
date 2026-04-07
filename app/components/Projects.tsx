@@ -9,7 +9,7 @@ const projects = [
   {
     title: "E-commerce Store",
     desc: "Front-end shopping platform",
-    link: "https://cartnova-by-haseeb.vercel.app/"
+    link: "https://cartnova-ah.vercel.app/"
   },
   {
     title: "Todo App",
