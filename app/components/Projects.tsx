@@ -14,12 +14,12 @@ const projects = [
   {
     title: "Todo App",
     desc: "Track your tasks",
-    link: "https://todotasks-by-haseeb.vercel.app/"
+    link: "https://todotasks-ah.vercel.app/"
   },
   {
     title: "Solar System Animation",
     desc: "Just a Simple animation of the solar system",
-    link: "https://solarsystem-animation-by-haseeb.vercel.app/"
+    link: "https://solarsystem-ah.vercel.app/"
   },
 ];
 
