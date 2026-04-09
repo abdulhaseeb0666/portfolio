@@ -29,7 +29,7 @@ export default function Hero() {
 
         {/* TEXT */}
         <div className="text-center md:text-left space-y-4">
-          <h1 className="text-5xl md:text-6xl font-extrabold bg-linear-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition duration-300">
+          <h1 className="text-5xl md:text-6xl max-[750px]:mt-4 font-extrabold bg-linear-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition duration-300">
             Abdul Haseeb
           </h1>
           <p className="text-gray-400 text-lg md:text-xl hover:text-white transition">
