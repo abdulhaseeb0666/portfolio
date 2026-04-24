@@ -2,6 +2,11 @@ import ProjectCard from "./ProjectCards";
 
 const projects = [
   {
+    title: "RecipeNow",
+    desc: "All recipies at one place",
+    link: "https://recipe-now-ah.vercel.app/"
+  },
+  {
     title: "Finance Tracker",
     desc: "Track income, expenses and budgets",
     link: "https://monetra-by-haseeb.vercel.app/",
