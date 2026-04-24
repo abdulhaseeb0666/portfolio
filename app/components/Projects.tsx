@@ -7,24 +7,14 @@ const projects = [
     link: "https://recipe-now-ah.vercel.app/"
   },
   {
-    title: "Finance Tracker",
+    title: "Monetra",
     desc: "Track income, expenses and budgets",
     link: "https://monetra-by-haseeb.vercel.app/",
   },
   {
-    title: "E-commerce Store",
+    title: "CartNova",
     desc: "Front-end shopping platform",
     link: "https://cartnova-ah.vercel.app/"
-  },
-  {
-    title: "Todo App",
-    desc: "Track your tasks",
-    link: "https://todotasks-ah.vercel.app/"
-  },
-  {
-    title: "Solar System Animation",
-    desc: "Just a Simple animation of the solar system",
-    link: "https://solarsystem-ah.vercel.app/"
   },
 ];
 
